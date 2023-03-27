@@ -7,6 +7,7 @@ function T = CreateDatabase(TrainDatabasePath)
 TrainFiles = dir(TrainDatabasePath);%训练集路径，将2维图像转化为一维向量
 fprintf('依据此路径->%s ,生成样本数据库 \n', TrainDatabasePath);
 
+% todo->不写死Index，uncomment this
 % T = [];%初始化
 % ImageFiles = dir(TrainDatabasePath);
 % ImageFilePaths = [];

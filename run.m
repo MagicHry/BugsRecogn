@@ -77,37 +77,3 @@ elseif strcmp(FirstMatchImgName,'17.bmp') | strcmp(FirstMatchImgName,'18.bmp') |
     msgbox('识别结果是蚂蚁！');
 end
 
-
-% 
-% % 创建昆虫数据库
-% T = CreateDatabase(TrainDatabasePath);%根据训练图片路径生成2维矩阵
-% [m, A, Eigenfaces,D] = EigenfaceCore(T);%生成特征量
-% FirstMatchImg = Recognition(TestImage, m, A, Eigenfaces);
-% 
-% % 选择需要识别的图片
-% SelectedImage = strcat(TrainDatabasePath,'\',FirstMatchImg);
-% SelectedImage = imread(SelectedImage);
-% 
-% % 显示图片
-% figure;
-% subplot(1,2,1);imshow(im);
-% title('测试图片');
-% subplot(1,2,2);imshow(SelectedImage);
-% title('库内匹配昆虫');
-% %输出识别昆虫的数字代号
-% str = strcat('匹配图片： :  ',FirstMatchImg);
-% disp(str)
-% 
-% %结果输出
-% if strcmp(FirstMatchImg,'1.bmp') | strcmp(FirstMatchImg,'2.bmp') |  strcmp(FirstMatchImg,'3.bmp') |  strcmp(FirstMatchImg,'4.bmp')
-%     msgbox('识别结果是蝴蝶！');
-% elseif strcmp(FirstMatchImg,'5.bmp') | strcmp(FirstMatchImg,'6.bmp') |  strcmp(FirstMatchImg,'7.bmp') |  strcmp(FirstMatchImg,'8.bmp')
-%     msgbox('识别结果是螳螂！');
-% elseif strcmp(FirstMatchImg,'9.bmp') | strcmp(FirstMatchImg,'10.bmp') |  strcmp(FirstMatchImg,'11.bmp') |  strcmp(FirstMatchImg,'12.bmp')
-%     msgbox('识别结果是七星瓢虫！');
-% elseif strcmp(FirstMatchImg,'13.bmp') | strcmp(FirstMatchImg,'14.bmp') |  strcmp(FirstMatchImg,'15.bmp') |  strcmp(FirstMatchImg,'16.bmp')
-%     msgbox('识别结果是蜜蜂！');
-% elseif strcmp(FirstMatchImg,'17.bmp') | strcmp(FirstMatchImg,'18.bmp') |  strcmp(FirstMatchImg,'19.bmp') |  strcmp(FirstMatchImg,'20.bmp')
-%     msgbox('识别结果是蚂蚁！');
-% end
-
